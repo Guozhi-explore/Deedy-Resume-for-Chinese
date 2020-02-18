@@ -146,8 +146,8 @@ Python \textbullet{} Javascript \\
 \location{一般}
 SpringBoot  \textbullet{} MySQL \\
 \location{了解}
-Nginx \textbullet{} MongoDB \\
-\textbullet{} Mahout \textbullet{} Vue \textbullet{} gdb\\
+Nginx \textbullet{} MongoDB \textbullet{} \\
+Mahout \textbullet{} Vue \textbullet{} Gdb\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,6 +173,9 @@ Nginx \textbullet{} MongoDB \\
 \begin{tightemize}
     \item \textbf{实现了从词法分析到x86-64代码生成的完整编译器} \textbf{答辩得分 39/40}
     \item 使用 flexc++完成词法分析，bisonc++进行语法分析
+    \item 对AST树进行type checking
+    \item 转换为能够生成代码的IR 树
+    \item 选择合适的x86-64指令
     \item 用启发式的着色算法进行寄存器分配
     \item 生成了符合x86-64标准的汇编代码
 \end{tightemize}
@@ -187,6 +190,7 @@ Nginx \textbullet{} MongoDB \\
 \item 实现了客户端通过RPC读写文件的File Server
 \item 通过Lock Server控制锁实现并发
 \item 保证一致性的前提下，客户端可以对文件和锁在本地进行缓存
+\item 通过这个项目，逐渐明白一个系统是如何搭起来的
 \end{tightemize}
 \sectionsep
 \sectionsep
@@ -209,7 +213,8 @@ Nginx \textbullet{} MongoDB \\
 \location{2019.03-2019.12}
 \begin{tightemize}
 \item 实现了\textbf{web proxy,shell,memory allocator,cpu pipeline}等项目
-\item 掌握了并发编程，网络，异常，汇编等重要的系统编程技能
+\item 在web proxy lab中实现了一个支持HTTP协议的并发proxy，这是这一系列lab中任务量最大的一个
+\item 掌握了并发编程，网络，异常，汇编，安全等重要的系统编程技能
 \item 在这些项目中深入理解了计算机系统基础
 \end{tightemize}
 \sectionsep
@@ -222,20 +227,12 @@ Nginx \textbullet{} MongoDB \\
 \item 使用Qt Gui
 \item 实现了双人对战，人机PK等功能
 \item 采用BFS算法进行寻路
-\item 面向对象开发
+\item 允许玩家选择难度，主题，背景，模式
 \end{tightemize}
 \sectionsep
 \sectionsep
 
-\runsubsection{扫地机器人手机遥控程序}
-\descript{比赛项目}
-\location{2018.02-2018.06}
-\begin{tightemize}
-\item android app开发
-\item 通过蓝牙与扫地机器人通信控制其移动
-\end{tightemize}
-\sectionsep
-\sectionsep
+
 
 
 
