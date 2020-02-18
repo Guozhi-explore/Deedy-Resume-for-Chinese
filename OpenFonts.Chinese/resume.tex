@@ -109,12 +109,12 @@ LinkedIn://  \href{https://www.linkedin.com/in/zhi-guo-316892186}{\bf Guozhi} \\
 
 \section{修读课程}
 \subsection{Graduate}
- 计算机系统基础  93,97,92 \\\newline
- 软件基础实践 99\\\newline
- 计算机系统工程 85 \\\newline
- 编译原理与技术 95 \\\newline
- Web开发 93 \\\newline
- 数据结构 91 \\\newline
+ 计算机系统基础  93,97,92 \\
+ 软件基础实践 99\\
+ 计算机系统工程 85 \\
+ 编译原理与技术 95 \\
+ Web开发 93 \\
+ 数据结构 91 \\
  \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,71 +154,63 @@ Nginx \textbullet{} Docker \textbullet{} Mahout \textbullet{} MongoDB \textbulle
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{实习经历}
+\section{项目}
 \sectionsep
-\runsubsection{谷歌编程之夏}
-\descript{学生参与者}
-\location{2017.05 - 2017.09 | 远程}
+\runsubsection{Tiger语言编译器\href{https://github.com/Guozhi-explore/Compilers}}
+\descript{课程个人作业}
+\location{2019.09 - 2019.12}
 \vspace{\topsep}
 \begin{tightemize}
-    \item 共有 20651 个注册学生，其中 1318 个申请被谷歌接收，\textbf{接收率 6\%}
-    \item 为 Processing 基金会实现了对 Processing 的 R 语言支持
-    \item 与社区紧密合作，实现对 Processing 库的支持和对 R 包的支持
-    \item 所做项目 \href{https://github.com/gaocegege/Processing.R}{\bf Processing.R} 在 GitHub 上获得 \textbf{70 stars}，成为本次编程之夏 star 最多的项目
+    \item 实现了从词法分析到x86-64代码生成的完整编译器\textbf{答辩得分 39/40}
+    \item 使用 flexc++完成词法分析，bisonc++进行语法分析
+    \item 用启发式的着色算法进行寄存器分配
+    \item 生成了符合x86-64标准的汇编代码
 \end{tightemize}
 \sectionsep
 
-\runsubsection{摩根士丹利}
-\descript{CIP 项目实习生}
-\location{2017.02-2017.08 | 上海}
+\runsubsection{网络文件系统}
+\descript{课程个人作业}
+\location{2019.09-2019.11}
 \begin{tightemize}
-\item 优化开源容器调度管理框架 treadmill 的调度器
-\item 实现与 Kubernetes 类似的调度模型，同时保留自身的树形结构
+\item 实现了文件系统的基本接口
+\item 实现了客户端通过RPC读写文件的File Server
+\item 通过Lock Server控制锁实现并发
+\item 保证一致性的前提下，客户端可以对文件和锁在本地进行缓存
 \end{tightemize}
 \sectionsep
 
-\runsubsection{上海触宝信息技术有限公司}
-\descript{数据工程师（实习）}
-\location{2015.09-2015.09 | 上海}
+\runsubsection{交大课程交流平台}
+\descript{暑期团队作业 | 后端}
+\location{2019.07-2015.08}
 \begin{tightemize}
-\item 移植爬虫代码到新的平台，优化重写部分过期的爬虫
+\item 使用Spring-Boot框架进行分层架构
+\item Spring-Data JPA 操作 MySQL与MongoDB
+\item JUnit 单元测试
+\item 协同过滤算法进行课程推荐
 \end{tightemize}
 \sectionsep
 
-\runsubsection{蚂蚁金服（杭州）网络技术有限公司}
-\descript{Java 研发工程师（实习）}
-\location{2015.07-2015.09 | 杭州}
+\runsubsection{深入理解计算机系统课程实验}
+\descript{课程实验 | 10个}
+\location{2019.03-2019.12}
 \begin{tightemize}
-\item 在支付宝国际事业团队从事海外直购业务开发
-\item 实现部分包裹清关的逻辑和后台管理的逻辑
+\item 实现了web proxy,shell,memory allocator,cpu pipeline等项目
+\item 掌握了并发编程，网络，异常，汇编等重要的系统编程技能
 \end{tightemize}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{项目与论文}
-\sectionsep
-\runsubsection{\href{https://github.com/caicloud/cyclone}{\bf Cyclone}}
-\descript{Maintainer}
-\location{2016.11}
+\runsubsection{AI贪吃蛇}
+\descript{课程个人作业 | 满分}
+\location{2019.06-2019.06}
 \begin{tightemize}
-    \item 基于 Docker 的持续集成与持续部署系统
-    \item 本科毕业设计，与才云科技合作开发，在 GitHub 上获得 \textbf{440 stars}
-    \item 调研其他开源实现，确定工作流程和架构选型，实现 YAML parser 和 Docker 的运行时集成
-    \end{tightemize}
+\item 使用Qt Gui
+\item 实现了双人对战，人机PK等功能
+\item 采用BFS算法进行寻路
+\item 面向对象开发
+\end{tightemize}
 \sectionsep
 
-\runsubsection{\href{https://github.com/gaocegege/scrala}{\bf Scrala}}
-\descript{Owner}
-\location{2015.12}
-\begin{tightemize}
-    \item 使用 scala 实现的爬虫框架，灵感来自 scrapy
-    \item 在 GitHub 上获得 \textbf{70 stars}
-    \item 底层使用 Actor 模型取代 Python 中的异步模型
-    \end{tightemize}
-\sectionsep
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     OPEN SOURCE
