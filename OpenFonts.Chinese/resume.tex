@@ -94,6 +94,7 @@
 
 \subsection{上海交通大学}
 \descript{软件学院软件工程}
+\descript{系统软件方向}
 \descript{本科三年级在读}
 \location{2017.09-2021.07}
 \sectionsep
@@ -101,6 +102,7 @@
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{成绩排名}
+\sectionsep
 学积分 87.9  \\
 专业排名  19/105 \\
 \sectionsep
@@ -164,13 +166,16 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \location{2019.09 - 2019.12}
 \vspace{\topsep}
 \begin{tightemize}
-    \item \textbf{实现了从词法分析到x86-64代码生成的完整编译器} \textbf{答辩得分 39/40}
-    \item 使用 flexc++完成词法分析，bisonc++进行语法分析
-    \item 对AST树进行type checking
-    \item 转换为能够生成代码的IR 树
-    \item 选择合适的x86-64指令
-    \item 用启发式的着色算法进行寄存器分配
-    \item 生成了符合x86-64标准的汇编代码
+    \item \textbf{实现了从源代码到x86-64代码生成的完整编译器} \textbf{答辩得分 39/40}
+    \item 使用flexc++、bisonc++进行词法分析、语法分析
+    \item 对语法分析后的短语结构生成合适抽象语法树
+    \item 对抽象语法树绑定变量与声明，进行语法检查
+    \item 按照 \textbf{x86-64}规范，将变量和参数分配于栈帧
+    \item 转换与程序语言和目标机器无关的 \textbf{中间表达树}
+    \item 将中间表达树节点合并成x86-64指令对应块
+    \item 对指令进行控制流分析，变量进行数据流分析
+    \item 用\textbf{启发式的着色算法}对变量和参数选择寄存器
+    \item 用寄存器名替代临时变量名，生成x86-64汇编代码
 \end{tightemize}
 \sectionsep
 \sectionsep
@@ -179,11 +184,13 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \descript{课程个人作业}
 \location{2019.09-2019.11}
 \begin{tightemize}
-\item 实现了文件系统的基本接口
-\item 实现了客户端通过RPC读写文件的File Server
-\item 通过Lock Server控制锁实现并发
-\item 保证一致性的前提下，客户端可以对文件和锁在本地进行缓存
-\item 通过这个项目，逐渐明白一个系统是如何搭起来的
+\item 完成了文件系统的基本接口，进一步实现fuse的基本操作
+\item 实现了客户端通过 \textbf{远程过程调用}读写文件的File Server
+\item Lock Server控制inode对应的锁从而保障一致性下实现并发
+\item 设计客户端能缓存或者等待锁，Lock Server能召回锁的 \textbf{协议}
+\item 通过客户端对锁的缓存，并发下RPC次数下降为原来的 \textbf{1/15}
+\item 设计出客户端从File Server缓存文件内容和信息的协议
+\item 通过客户端缓存文件内容与信息，RPC次数下降为原来的 \textbf{1/10}
 \end{tightemize}
 \sectionsep
 \sectionsep
@@ -192,11 +199,10 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \descript{暑期团队作业 | 后端}
 \location{2019.07-2019.08}
 \begin{tightemize}
-\item 使用\textbf{Spring-Boot}框架进行分层架构
-\item Spring-Data JPA 操作 MySQL与MongoDB
-\item JUnit 单元测试
-\item Jmeter性能测试，并优化数据库sql和采用nginx实现负载均衡提升性能
-\item 协同过滤算法进行课程推荐
+\item 使用Spring-Boot框架进行后端分层架构
+\item  \textbf{MySQL与MongoDB}结合使用存储数据
+\item JUnit单元测试，Jmeter性能测试，Nginx负载均衡
+\item 借助Apache Mahout中的协同过滤算法进行课程推荐
 \end{tightemize}
 \sectionsep
 \sectionsep
@@ -206,10 +212,8 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \location{2019.03-2019.12}
 \begin{tightemize}
 \item 实现了\textbf{web proxy,shell,memory allocator,cpu pipeline}等项目
-\item 在web proxy lab中实现了一个支持HTTP协议的并发proxy,\\
-        这是这一系列lab中任务量最大的一个
+\item web proxy lab中实现了一个支持HTTP协议的并发proxy
 \item 掌握了并发编程，网络，异常，汇编，安全等重要的系统编程技能
-\item 在这些项目中深入理解了计算机系统基础
 \end{tightemize}
 \sectionsep
 \sectionsep
@@ -221,7 +225,6 @@ Mahout \textbullet{} Vue \textbullet{} Gdb\\
 \item 使用Qt Gui
 \item 实现了双人对战，人机PK等功能
 \item 采用BFS算法进行寻路
-\item 允许玩家选择难度，主题，背景，模式
 \end{tightemize}
 \sectionsep
 \sectionsep
